@@ -1,6 +1,6 @@
 /*==================== GOOGLE FONTS ====================*/
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"); */
-/* @import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
 
@@ -702,7 +702,10 @@ img {
   right: -0.5rem;
 }
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   bottom: -2.5rem;
 }
 
@@ -1019,9 +1022,6 @@ img {
   .about__description {
     text-align: initial;
   }
-  .about__info {
-    justify-content: space-between;
-  }
   .about__buttons {
     justify-content: initial;
   }
@@ -1104,7 +1104,10 @@ img {
   .swiper-button-next {
     right: -3.5rem;
   }
-  .swiper-container-horizontal > .swiper-pagination-bullets {
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
     bottom: -4.5rem;
   }
 
