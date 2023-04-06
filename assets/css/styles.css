@@ -1,6 +1,6 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap");
 
 /*==================== VARIABLES CSS ====================*/
 
@@ -89,7 +89,7 @@ body.dark-theme {
   border-radius: 100%;
   width: 15px;
   height: 15px;
-  margin: 1%;
+  margin: 0rem 0.2rem 0rem;
   padding: 0;
 }
 
@@ -97,8 +97,17 @@ body.dark-theme {
   cursor: pointer;
 }
 
-.palette__active[data-content] {
-  display: block;
+.palette__open {
+}
+
+.palette__close {
+  right: 0px;
+  visibility: visible;
+}
+
+.palette__flex {
+  display: flex;
+  margin-right: 1rem;
 }
 
 .purpel {

@@ -66,16 +66,18 @@
         <div class="nav__btns">
           <!-- Color change buttons -->
 
-          <!-- <div class="palette__active" data-target="#palette">
-                        <i class="uil uil-palette change-theme palette__content palette__active" data-content id="palette"></i>
-                    </div>
-                    
-                    <div class="palette__content button--flex" data-content id="palette__colors">
-                        <div onclick="changeColor(250)" class="color-buttons purpel"></div>
-                        <div onclick="changeColor(142)" class="color-buttons green"></div>
-                        <div onclick="changeColor(230)" class="color-buttons blue"></div>
-                        <div onclick="changeColor(340)" class="color-buttons pink"></div>
-                    </div> -->
+          <div class="palette__flex palette__open">
+            <div onclick="changeColor(250)" class="color-buttons purpel"></div>
+            <div onclick="changeColor(142)" class="color-buttons green"></div>
+            <div onclick="changeColor(230)" class="color-buttons blue"></div>
+            <div onclick="changeColor(340)" class="color-buttons pink"></div>
+          </div>
+
+          <i class="uil uil-multiply change-theme palette__open"></i>
+          <i
+            class="uil uil-palette change-theme palette__close"
+            id="palette"
+          ></i>
 
           <!-- Theme change button -->
           <i class="uil uil-moon change-theme" id="theme-button"></i>
