@@ -1,6 +1,7 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap");
 
 /*==================== VARIABLES CSS ====================*/
 
@@ -28,6 +29,7 @@
   /*========== Font and typography ==========*/
   --body-font: "poppins", sans-serif;
   /* --body-font: 'Teko', sans-serif; */
+  /* --body-font: 'Asap', sans-serif; */
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 2rem;
