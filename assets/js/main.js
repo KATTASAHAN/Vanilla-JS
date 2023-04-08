@@ -158,25 +158,21 @@ themeButton.addEventListener("click", () => {
 
 function changeColor(color) {
   document.documentElement.style.setProperty("--hue-color", color);
+  paletteToggle(0);
 }
 
 // ============ Palette Colors ============
 
-// const pColors = document.querySelectorAll('[data-target]'),
-//       pContents = document.querySelectorAll('[data-content]');
+function paletteToggle(open) {
+  const paletteClose = document.getElementById("palette_close");
+  const paletteOpen = document.getElementById("palette_open");
+  if (open) {
+    paletteClose.classList.remove("palette__close");
+    paletteOpen.classList.add("palette__close");
+  } else {
+    paletteClose.classList.add("palette__close");
+    paletteOpen.classList.remove("palette__close");
+  }
+}
 
-// pColors.forEach(tab => {
-//   tab.addEventListener('click', () => {
-//     const target = document.querySelector(tab.dataset.target)
 
-//     pContents.forEach(tabContent => {
-//       tabContent.classList.remove('palette__active')
-//     })
-//     target.classList.add('palette__active')
-
-//     pColors.forEach(tab => {
-//       tab.classList.remove('palette__active')
-//     })
-//     tab.classList.add('palette__active')
-//   })
-// })
