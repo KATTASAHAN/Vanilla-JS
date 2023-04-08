@@ -1,6 +1,7 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap");
 
 /*==================== VARIABLES CSS ====================*/
 
@@ -28,6 +29,7 @@
   /*========== Font and typography ==========*/
   --body-font: "poppins", sans-serif;
   /* --body-font: 'Teko', sans-serif; */
+  /* --body-font: 'Asap', sans-serif; */
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
   --big-font-size: 2rem;
@@ -89,7 +91,7 @@ body.dark-theme {
   border-radius: 100%;
   width: 15px;
   height: 15px;
-  margin: 1%;
+  margin: 0.3rem 0.2rem 0rem;
   padding: 0;
 }
 
@@ -97,8 +99,18 @@ body.dark-theme {
   cursor: pointer;
 }
 
-.palette__active[data-content] {
-  display: block;
+.palette{
+  margin-right: .5rem !important;
+}
+.palette__close {
+  width: 0;
+  visibility: hidden;
+}
+
+.palette__flex {
+  position: absolute;
+  display: flex;
+  flex-direction: column
 }
 
 .purpel {
