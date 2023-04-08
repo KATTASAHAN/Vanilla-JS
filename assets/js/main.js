@@ -163,16 +163,32 @@ function changeColor(color) {
 
 // ============ Palette Colors ============
 
+// function paletteToggle(open) {
+//   const paletteClose = document.getElementById("palette_close");
+//   const paletteOpen = document.getElementById("palette_open");
+//   if (open) {
+//     paletteClose.classList.remove("palette__close");
+//     paletteOpen.classList.add("palette__close");
+//   } else {
+//     paletteClose.classList.add("palette__close");
+//     paletteOpen.classList.remove("palette__close");
+//   }
+// }
+
 function paletteToggle(open) {
   const paletteClose = document.getElementById("palette_close");
   const paletteOpen = document.getElementById("palette_open");
+  const paletteClose2 = document.getElementById("palette_close2");
+  const paletteOpen2 = document.getElementById("palette_open2");
   if (open) {
     paletteClose.classList.remove("palette__close");
     paletteOpen.classList.add("palette__close");
+    paletteClose2.classList.remove("palette__close");
+    paletteOpen2.classList.add("palette__close");
   } else {
     paletteClose.classList.add("palette__close");
     paletteOpen.classList.remove("palette__close");
+    paletteClose2.classList.add("palette__close");
+    paletteOpen2.classList.remove("palette__close");
   }
 }
-
-

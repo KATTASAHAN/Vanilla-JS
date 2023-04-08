@@ -66,7 +66,7 @@
         <div class="nav__btns">
           <!-- Color change buttons -->
 
-          <div id="palette_close" class="palette__close">
+          <div id="palette_close" class="palette__close mscreen">
             <i
               class="uil uil-multiply change-theme"
               onclick="paletteToggle(0)"
@@ -84,8 +84,32 @@
           </div>
 
           <i
-            class="uil uil-palette change-theme palette"
+            class="uil uil-palette change-theme mscreen"
             id="palette_open"
+            onclick="paletteToggle(1)"
+          ></i>
+
+          <!-- Flip Color Dropdown -->
+          <div id="palette_close2" class="palette__close wscreen">
+            <div class="palette__flex">
+              <div onclick="changeColor(340)" class="color-buttons pink"></div>
+              <div onclick="changeColor(230)" class="color-buttons blue"></div>
+              <div onclick="changeColor(142)" class="color-buttons green"></div>
+              <div
+                onclick="changeColor(250)"
+                class="color-buttons purpel"
+              ></div>
+            </div>
+
+            <i
+              class="uil uil-multiply change-theme"
+              onclick="paletteToggle(0)"
+            ></i>
+          </div>
+
+          <i
+            class="uil uil-palette change-theme wscreen"
+            id="palette_open2"
             onclick="paletteToggle(1)"
           ></i>
 
