@@ -108,7 +108,7 @@ body.dark-theme {
 .palette__flex {
   position: absolute;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .purpel {
@@ -899,6 +899,11 @@ img {
   background-color: var(--text-color-light);
 }
 
+button {
+  all: unset;
+  cursor: pointer;
+}
+
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
@@ -935,12 +940,12 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .mscreen{
+  .mscreen {
     visibility: hidden;
     width: 0;
     margin: 0 !important;
   }
-  .palette__flex{
+  .palette__flex {
     position: none;
     display: contents;
   }
@@ -951,11 +956,11 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .wscreen{
+  .wscreen {
     visibility: hidden;
     width: 0;
     margin: 0 !important;
-  }  
+  }
 }
 /* For medium devices */
 @media screen and (min-width: 568px) {
