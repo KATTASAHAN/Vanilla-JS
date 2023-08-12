@@ -88,7 +88,7 @@ let swiper = new Swiper(".portfolio__container", {
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
-  const scrollY = window.pageYOffset;
+  const scrollY = window.scrollY;
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
@@ -191,4 +191,27 @@ function paletteToggle(open) {
     paletteClose2.classList.add("palette__close");
     paletteOpen2.classList.remove("palette__close");
   }
+}
+
+// Submit
+
+function onFormSubmit() {
+  const formData = document.forms.onSubmit;
+  const formValues = new FormData(formData);
+  const payload = { name: null, email: null, message: null };
+  payload.name = formValues.get("name");
+  payload.email = formValues.get("email");
+  payload.message = formValues.get("message");
+  console.log(payload);
+  // window.open(
+  //   "mailto:kattasahan2234@gmail.com?subject=Portfolio%20Email&body=Name:%20" +
+  //     payload.name +
+  //     "%20Email:" +
+  //     payload.email +
+  //     "%20Message:" +
+  //     payload.message
+  // );
+  document.querySelector('input[name="name"]').value = null;
+  document.querySelector('input[name="email"]').value = null;
+  document.querySelector('textarea[name="message"]').value = null;
 }
