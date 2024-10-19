@@ -348,8 +348,9 @@ img {
 }
 
 .home__blob {
-  width: 200px;
-  fill: var(--first-color);
+  /* width: 200px; */
+  /* fill: var(--first-color); */
+  object-fit: fill;
 }
 
 .home__blob-img {
@@ -544,9 +545,6 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html {
-  width: 90%;
-}
 
 .skills__html {
   width: 90%;
@@ -557,7 +555,7 @@ img {
 }
 
 .skills__js {
-  width: 60%;
+  width: 90%;
 }
 
 .skills__ts {
@@ -569,7 +567,7 @@ img {
 }
 
 .skills__react {
-  width: 20%;
+  width: 80%;
 }
 
 .skills__figma {
