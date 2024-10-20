@@ -409,7 +409,7 @@ img {
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
 }
@@ -544,7 +544,6 @@ img {
   display: block;
   background-color: var(--first-color);
 }
-
 
 .skills__html {
   width: 90%;
@@ -1078,6 +1077,8 @@ button {
 
   .portfolio__img {
     width: 320px;
+    height: 213px;
+    object-fit: fill;
   }
   .portfolio__content {
     align-items: center;

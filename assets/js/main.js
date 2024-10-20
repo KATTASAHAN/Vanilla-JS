@@ -203,14 +203,14 @@ function onFormSubmit() {
   payload.email = formValues.get("email");
   payload.message = formValues.get("message");
   console.log(payload);
-  // window.open(
-  //   "mailto:kattasahan2234@gmail.com?subject=Portfolio%20Email&body=Name:%20" +
-  //     payload.name +
-  //     "%20Email:" +
-  //     payload.email +
-  //     "%20Message:" +
-  //     payload.message
-  // );
+  window.open(
+    "mailto:kattasahan2234@gmail.com?subject=Portfolio%20Email&body=Name:%20" +
+    payload.name +
+    "%0D%0A%0D%0AEmail:%20" +
+    payload.email +
+    "%0D%0A%0D%0AMessage:%20" +
+    payload.message
+  );
   document.querySelector('input[name="name"]').value = null;
   document.querySelector('input[name="email"]').value = null;
   document.querySelector('textarea[name="message"]').value = null;
